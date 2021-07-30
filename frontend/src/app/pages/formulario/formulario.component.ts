@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UsuariosService } from 'src/app/services/usuarios.service';
 
 @Component({
@@ -12,12 +13,13 @@ export class FormularioComponent implements OnInit {
     firstName: [''],
     lastName: ['']
   })
-  constructor(private fb: FormBuilder, private usuariosService:UsuariosService) { }
+  constructor(private fb: FormBuilder, private usuariosService:UsuariosService , private router:Router) { }
 
   ngOnInit(): void {
   }
 agregar(){
   this.usuariosService.createAuthor(this.profileForm.value).
   subscribe(data=>console.log(data))
+this.router.navigate(['/listado'])
 }
 }

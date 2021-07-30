@@ -8,7 +8,10 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { AsideComponent } from './shared/aside/aside.component';
+import { ListadoPostsComponent } from './pages/listado-posts/listado-posts.component';
+import { FormularioPostsComponent } from './pages/formulario-posts/formulario-posts.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HttpClientModule } from '@angular/common/http'
     FormularioComponent,
     ListadoComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    AsideComponent,
+    ListadoPostsComponent,
+    FormularioPostsComponent,
   ],
   imports: [
     BrowserModule,

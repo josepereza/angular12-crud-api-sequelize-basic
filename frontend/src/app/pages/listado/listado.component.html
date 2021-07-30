@@ -1,1 +1,23 @@
-<p>listado works!</p>
+<h2>Listado Usuarios</h2>
+<a  routerLink='/formulario' class="btn btn-primary">Agregar</a>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+     
+     
+      <tr *ngFor="let item of authors">
+       
+        <td >{{item.id}}</td>
+        <td>{{item.firstName}}</td>
+        <td>{{item.lastName}}</td>
+
+      </tr>
+    </tbody>
+  </table>

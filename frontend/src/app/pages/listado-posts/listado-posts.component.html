@@ -1,0 +1,13 @@
+<h2>Listado Post</h2>
+<a href="" class="btn btn-primary mb-2">Add</a>
+<div class="card-group">
+    <div class="card" *ngFor="let item of posts">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.content}}}</p>
+        <p class="card-text"><small class="text-muted">Author : {{item.author.firstName}}{{" "}}{{item.author.lastName}}</small></p>
+      </div>
+    </div>
+    
+  </div>

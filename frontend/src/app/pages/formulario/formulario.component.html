@@ -1,4 +1,5 @@
-<div class="container">
+<h2>Altas Usuarios</h2>
+<div class="container-formulario">
     <form [formGroup]="profileForm" (ngSubmit)="agregar()">
         <div class="mb-3">
             <label for="firstName" class="form-label">First Name</label>
@@ -10,5 +11,6 @@
           </div>
           
           <button class="btn btn-primary">Agregar</button>
+          <a class="btn btn-danger ms-2" routerLink='/listado'>Cancelar</a>
     </form>
 </div>
