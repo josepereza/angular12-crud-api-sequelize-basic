@@ -1,0 +1,14 @@
+<div class="container">
+    <form [formGroup]="profileForm" (ngSubmit)="agregar()">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="First Name">
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">last Name</label>
+            <input type="text" class="form-control" id="lastName"  formControlName="lastName" placeholder="Last Name">
+          </div>
+          
+          <button class="btn btn-primary">Agregar</button>
+    </form>
+</div>
